@@ -89,11 +89,11 @@ header {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-  color: $text-title;
+  color: var(--text-title);
 }
 
 .logo__accent {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .nav__link {
@@ -106,18 +106,18 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: $text-title;
+  color: var(--text-title);
 
-  transition: color 250ms $time-cubic;
+  transition: color 250ms var(--time-cubic);
 }
 
 .nav__link:hover,
 .nav__link:focus {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .nav__link--current {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .nav__link--current::after {
@@ -129,12 +129,12 @@ header {
   height: 4px;
   bottom: -2px;
 
-  background-color: $accent-color;
+  background-color: var(--accent-color);
   border-radius: 2px;
 }
 
 .nav__link--color {
-  color: $text-main;
+  color: var(--text-main);
 }
 
 .nav__item {
@@ -154,7 +154,7 @@ header {
 
 .contacts__icon:hover,
 .contacts__icon:focus {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 /* HERO */
@@ -175,7 +175,7 @@ header {
 }
 
 .hero__title {
-  color: $text-white;
+  color: var(--text-white);
 
   font-weight: 900;
   font-size: 44px;
@@ -188,8 +188,8 @@ header {
 }
 
 .hero__btn {
-  color: $text-white;
-  background: $accent-color;
+  color: var(--text-white);
+  background: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
@@ -200,7 +200,7 @@ header {
 
   padding: 10px 32px;
   border-radius: 4px;
-  border-color: $accent-color;
+  border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -215,7 +215,7 @@ header {
 
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms $cubic, visibility 250ms $cubic;
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 
 .hero__backdrop.is-hidden {
@@ -236,11 +236,11 @@ header {
   top: 50%;
   left: 50%;
 
-  background-color: $text-white;
+  background-color: var(--text-white);
 
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  transition: opacity 250ms $cubic, transform 250ms $cubic;
+  transition: opacity 250ms var(--cubic), transform 250ms var(--cubic);
 }
 
 .modal__close {
@@ -254,13 +254,13 @@ header {
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $text-white;
-  transition: fill 250ms $cubic;
+  background-color: var(--text-white);
+  transition: fill 250ms var(--cubic);
 }
 
 .modal__close:focus,
 .modal__close:hover {
-  fill: $accent-color;
+  fill: var(--accent-color);
 }
 
 /* FORM */
@@ -275,7 +275,7 @@ header {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
-  color: $text-title;
+  color: var(--text-title);
   margin: 0 auto 12px;
 }
 
@@ -287,7 +287,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: $text-main;
+  color: var(--text-main);
 }
 
 .input__area {
@@ -306,12 +306,12 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border 250ms $cubic;
+  transition: border 250ms var(--cubic);
 }
 
 .input__field:hover,
 .input__field:focus {
-  border: 1px solid $accent-color;
+  border: 1px solid var(--accent-color);
   outline: none;
 }
 
@@ -320,13 +320,13 @@ header {
   top: 11px;
   left: 12px;
 
-  transition: fill 250ms $cubic;
+  transition: fill 250ms var(--cubic);
 }
 
 .input__field:focus + .input__icon,
 .input__field:hover + .input__icon,
 .input__field:active + .input__icon {
-  fill: $accent-color;
+  fill: var(--accent-color);
 }
 
 .input__textarea {
@@ -343,7 +343,7 @@ header {
 
 .input__textarea:hover,
 .input__textarea:focus {
-  border: 1px solid $accent-color;
+  border: 1px solid var(--accent-color);
   outline: none;
 }
 
@@ -366,7 +366,7 @@ header {
   letter-spacing: 0.03em;
   margin-top: 10px;
 
-  color: $text-main;
+  color: var(--text-main);
 }
 
 .check__input {
@@ -385,13 +385,13 @@ header {
 
 .check__icon {
   position: absolute;
-  top: ;
+  top: 19%;
   left: 0;
-  background-color: $accent-color;
+  background-color: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
 
-  transition: opacity 250ms $cubic;
+  transition: opacity 250ms var(--cubic);
 }
 
 .check__box {
@@ -403,7 +403,7 @@ header {
   width: 16px;
   height: 15px;
 
-  border: 3px solid $text-title;
+  border: 3px solid var(--text-title);
   border-radius: 2px;
 }
 
@@ -418,7 +418,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .form__submit-button {
@@ -431,11 +431,11 @@ header {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: $text-white;
-  background-color: $accent-color;
+  color: var(--text-white);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: background-color 250ms $cubic;
+  transition: background-color 250ms var(--cubic);
 }
 
 .form__submit-button:hover,
@@ -462,7 +462,7 @@ header {
 }
 
 .features__title {
-  color: $text-title;
+  color: var(--text-title);
 
   font-weight: 700;
   font-size: 14px;
@@ -473,7 +473,7 @@ header {
 }
 
 .features__description {
-  color: $text-main;
+  color: var(--text-main);
 
   font-size: 14px;
   line-height: 1.7;
@@ -500,7 +500,7 @@ header {
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ*/
 
 .spec__title {
-  color: $text-title;
+  color: var(--text-title);
 
   font-weight: bold;
   font-size: 36px;
@@ -534,7 +534,7 @@ header {
   bottom: 0;
   width: 100%;
   height: 70px;
-  color: $text-white;
+  color: var(--text-white);
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
@@ -548,7 +548,7 @@ header {
 }
 
 .team-member {
-  background-color: $text-white;
+  background-color: var(--text-white);
   max-width: 270px;
   min-height: 368px;
 
@@ -569,11 +569,11 @@ header {
   font-size: 16px;
   line-height: 19px;
 
-  color: $text-title: #212121;
+  color: var(--text-title);
 }
 
 .team-member__position {
-  color: $text-main;
+  color: var(--text-main);
 
   font-size: 16px;
   line-height: 1.2;
@@ -610,7 +610,7 @@ header {
 
 .social-media__area:hover,
 .social-media__area:focus {
-  background-color: $accent-color;
+  background-color: var(--accent-color);
 }
 
 .social-media__icon {
@@ -647,13 +647,13 @@ header {
   color: #afb1b8;
   border: 1px solid;
 
-  transition: color 250ms $cubic, border 250ms $cubic;
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
 .clients__card:hover,
 .clients__card:focus {
-  color: $accent-color;
-  border: 1px solid $accent-color;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients__item + .clients__item {
@@ -681,7 +681,7 @@ header {
 }
 
 .logo__white {
-  color: $text-white;
+  color: var(--text-white);
 }
 
 .address__item:not(:last-child) {
@@ -691,11 +691,11 @@ header {
 .address__map {
   font-size: 14px;
   line-height: 1.7;
-  color: $text-white;
+  color: var(--text-white);
 }
 
 .address__contacts {
-  color: $text-footer;
+  color: var(--text-footer);
 
   font-size: 14px;
   line-height: 1.7;
@@ -709,7 +709,7 @@ header {
   text-transform: uppercase;
   margin: 0px;
   margin-bottom: 10px;
-  color: $text-white;
+  color: var(--text-white);
 }
 
 .join__media {
@@ -724,7 +724,7 @@ header {
 
 .social-media__area--color {
   background-color: rgba(255, 255, 255, 0.1);
-  color: $text-white;
+  color: var(--text-white);
 }
 
 .subscribe__form {
@@ -743,13 +743,13 @@ header {
   margin-top: 10px;
   padding-left: 16px;
   background-color: transparent;
-  color: $text-footer;
+  color: var(--text-footer);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
 .subscribe__input::placeholder {
-  color: $text-footer;
+  color: var(--text-footer);
 }
 
 .subscribe__button {
@@ -766,8 +766,8 @@ header {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: $text-white;
-  background-color: $accent-color;
+  color: var(--text-white);
+  background-color: var(--accent-color);
 }
 
 .subscribe__icon {
@@ -799,10 +799,10 @@ header {
 
   padding: 6px 22px;
 
-  color: $text-title;
+  color: var(--text-title);
   background: #f5f4fa;
-  transition: color 250ms $cubic, background-color 250ms $cubic,
-    box-shadow 250ms $cubic;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .btns__button:hover,
@@ -851,7 +851,7 @@ header {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms $cubic;
+  transition: transform 250ms var(--cubic);
   opacity: 0;
 }
 
@@ -860,7 +860,7 @@ header {
   font-size: 18px;
   line-height: 1.56;
 
-  color: $text-white;
+  color: var(--text-white);
 }
 
 .product__meta {
@@ -873,7 +873,7 @@ header {
 }
 
 .product__name {
-  color: $text-title;
+  color: var(--text-title);
 
   font-weight: 700;
   font-size: 18px;
@@ -882,7 +882,7 @@ header {
 }
 
 .product__tipe {
-  color: $text-main;
+  color: var(--text-main);
 
   font-size: 16px;
   line-height: 1.9;
